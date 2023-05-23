@@ -53,7 +53,6 @@ table {
 /* --------------------------------------------- */
 .wrap{
     width: 1296px;
-    height: 1140px;
     margin: 50px auto;
     display: flex;
     flex-wrap: wrap;
@@ -62,20 +61,19 @@ table {
 .card{
     box-sizing: border-box;
     width: 416px;
-    height: 558px;
     border: 1px solid #F2F2F2;
-    /* border: 1px solid black; */
     border-radius: 16px;
     overflow: hidden;
+
+    display: flex; 
+    flex-direction: column; 
 }
 .img-container{
     height:312px;
     overflow: hidden;
 }
-img:hover{
-    transform: scale(1.2,1.2);
-    transition: all 0.4s ease-out;
-  }
+.card:hover img{transform: scale(1.2,1.2);}
+.card img{transition: all 0.4s ease-out;}
 
 h2{
     font-weight: 900;
@@ -83,24 +81,23 @@ h2{
     line-height: 120%;
 }
 .desc{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-grow: 1;
+
     padding: 20px 32px;
     gap: 12px;
     border-bottom: 1px solid #F2F2F2;
+    border-bottom: 1px solid black;
 }
 .desc p{
     font-size: 14px;
     color: #525252;
+    margin-top: 12px;
 }
 .desc2-3{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 20px 32px;
-    gap: 199px;
 }
 .desc2{border-bottom: 1px solid #F2F2F2;}
 .desc2 div:first-child{
